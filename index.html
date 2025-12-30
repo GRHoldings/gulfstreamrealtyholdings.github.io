@@ -5,77 +5,99 @@
   <title>Gulfstream Realty Holdings</title>
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Source+Sans+Pro:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
     :root {
-      --navy-blue: #142F55;
+      --navy: #142F55;
       --gold: #C9A24D;
       --gray: #A7ADB3;
+      --light-gray: #F4F6F8;
       --white: #FFFFFF;
     }
 
     body {
       margin: 0;
       font-family: 'Source Sans Pro', sans-serif;
-      color: var(--navy-blue);
-      background-color: var(--white);
-      line-height: 1.6;
+      color: var(--navy);
+      background: var(--white);
+      line-height: 1.7;
     }
 
-    header {
-      padding: 60px 10%;
+    /* HERO */
+    .hero {
+      background: linear-gradient(rgba(20,47,85,0.9), rgba(20,47,85,0.9));
+      color: var(--white);
+      padding: 90px 12%;
       text-align: center;
-      border-bottom: 4px solid var(--gold);
     }
 
-    header h1 {
+    .hero h1 {
       font-family: 'Montserrat', sans-serif;
-      font-size: 40px;
-      margin-bottom: 10px;
+      font-size: 44px;
+      margin-bottom: 20px;
+      letter-spacing: 0.5px;
     }
 
-    header p {
-      font-size: 18px;
-      color: var(--gray);
-      max-width: 900px;
+    .hero p {
+      font-size: 19px;
+      max-width: 950px;
       margin: 0 auto;
+      color: #E6E9ED;
     }
 
+    /* SECTIONS */
     section {
-      padding: 60px 12%;
+      padding: 80px 12%;
     }
 
     h2 {
       font-family: 'Montserrat', sans-serif;
-      font-size: 28px;
-      margin-bottom: 20px;
+      font-size: 30px;
+      margin-bottom: 25px;
       border-left: 5px solid var(--gold);
-      padding-left: 15px;
+      padding-left: 18px;
     }
 
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 35px;
+      margin-top: 30px;
     }
 
     .card {
+      background: var(--white);
       border: 1px solid var(--gray);
-      padding: 30px;
-      border-radius: 8px;
+      padding: 35px;
+      border-radius: 10px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     }
 
+    .card h3 {
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 15px;
+    }
+
+    /* CONTACT */
+    .contact {
+      background: var(--light-gray);
+    }
+
+    .contact p {
+      font-size: 18px;
+    }
+
+    /* FOOTER */
     footer {
-      background-color: var(--navy-blue);
+      background: var(--navy);
       color: var(--white);
       text-align: center;
-      padding: 40px 10%;
+      padding: 45px 10%;
     }
 
-    footer a {
+    footer span {
       color: var(--gold);
-      text-decoration: none;
       font-weight: 600;
     }
   </style>
@@ -83,15 +105,17 @@
 
 <body>
 
-<header>
+<!-- HERO -->
+<div class="hero">
   <h1>Gulfstream Realty Holdings</h1>
   <p>
     Gulfstream Realty Holdings advances urban redevelopment projects in New York City
     while building affordable housing solutions across Florida—backed by disciplined
     operations and strong strategic partnerships.
   </p>
-</header>
+</div>
 
+<!-- FOCUS -->
 <section>
   <h2>Our Focus</h2>
 
@@ -99,22 +123,23 @@
     <div class="card">
       <h3>Urban Redevelopment</h3>
       <p>
-        Strategic acquisition, repositioning, and revitalization of urban real estate
-        assets throughout New York City.
+        We acquire, reposition, and revitalize urban real estate assets throughout
+        New York City, emphasizing long-term value creation and operational discipline.
       </p>
     </div>
 
     <div class="card">
       <h3>Affordable Housing</h3>
       <p>
-        Development and operation of affordable and workforce housing solutions across
-        Florida, including Section 8–compliant properties.
+        We develop and operate affordable and workforce housing solutions across Florida,
+        including Section 8–compliant properties in partnership with public agencies.
       </p>
     </div>
   </div>
 </section>
 
-<section>
+<!-- CONTACT -->
+<section class="contact">
   <h2>Contact</h2>
   <p>
     📧 <strong>Email:</strong> info@gulfstreamrealtyholdings.com<br>
@@ -122,8 +147,9 @@
   </p>
 </section>
 
+<!-- FOOTER -->
 <footer>
-  © 2025 Gulfstream Realty Holdings<br>
+  © 2025 <span>Gulfstream Realty Holdings</span><br>
   Urban Redevelopment & Affordable Housing
 </footer>
 
